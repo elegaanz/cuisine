@@ -10,6 +10,11 @@ $green: #84A59D;
   font-weight: normal;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
   font-family: "Anonymous";
   color: $black;
@@ -21,7 +26,58 @@ a, a:visited {
 }
 
 header {
-  width: 80vw;
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.home {
+  background: $pink;
+}
+
+.home.hero {
+    background: radial-gradient(100% 150% ellipse at center -16em, #F5CAC3 100%, transparent);
+    //background: radial-gradient(110% 100% ellipse at top, $pink 100%, transparent);
+
+    h1 {
+        margin: 20vh 0;
+    }
+}
+
+.recipes {
+    width: 60vw;
+    margin: 5em auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+
+    div {
+        background: white;
+        border: 1px solid $black;
+        border-radius: 1em;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            margin: 2em 0;
+        }
+
+        img {
+            position: relative;
+            left: -2em;
+            float: left;
+            width: 6em;
+            height: 6em;
+        }
+    }
+}
+
+nav {
+    width: 60vw;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-around;
+    a {
+        text-align: center;
+    }
 }

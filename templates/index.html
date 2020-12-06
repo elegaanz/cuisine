@@ -1,17 +1,25 @@
 {% extends "base.html" %}
 
+{% block header %}home{% endblock header %}
+
 {% block content %}
+    <header class="home hero">
+        <h1>Les Panicakes</h1>
+    </header>
+    <main class="recipes">
     {% for article in paginator.pages %}
         <div>
+            <img src="/assiette.png">
             <h2>{{ article.title }}</h2>
         </div>
     {% endfor %}
+    </main>
     <nav>
         {% if paginator.previous %}
-            <a href="{{ paginator.previous }}">&#8668; Page précédente</a>
+            <a class="prev" href="{{ paginator.previous }}">&#8668; Page précédente</a>
         {% endif %}
         {% if paginator.next %}
-            <a href="{{ paginator.next }}">Page suivante &#8669;</a>
+            <a class="next" href="{{ paginator.next }}">Page suivante &#8669;</a>
         {% endif %}
     </nav>
 {% endblock content %}
