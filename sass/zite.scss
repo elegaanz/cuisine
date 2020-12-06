@@ -1,0 +1,27 @@
+$pink: #F5CAC3;
+$white: #F7EDE2;
+$yellow: #F6BD60;
+$black: #28262C;
+$green: #84A59D;
+
+@font-face {
+  font-family: "Anonymous";
+  src: url("/Anonymous.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  font-family: "Anonymous";
+  color: $black;
+  background: $white;
+}
+
+a, a:visited {
+  color: $black;
+}
+
+header {
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+}

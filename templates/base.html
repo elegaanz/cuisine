@@ -5,8 +5,14 @@
     <head>
         <meta charset="utf-8">
         <title>{{ p.title }} ⋅ Les Panicakes</title>
+        <link rel="stylesheet" href="/zite.css">
     </head>
     <body>
+        <header>
+          <a href="/">Accueil</a>
+          <a href="/tags">Tags</a>
+          <a href="/recherche">Rechercher</a>
+        </header>
         <h1>Bienvenue sur <em>Les Panicakes</em> !</h1>
         {% block content %}{% endblock content %}
     </body>
