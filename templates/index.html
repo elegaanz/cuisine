@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for article in paginator.pages %}
+        <div>
+            <h2>{{ article.title }}</h2>
+        </div>
+    {% endfor %}
+    <nav>
+        {% if paginator.previous %}
+            <a href="{{ paginator.previous }}">&#8668; Page précédente</a>
+        {% endif %}
+        {% if paginator.next %}
+            <a href="{{ paginator.next }}">Page suivante &#8669;</a>
+        {% endif %}
+    </nav>
+{% endblock content %}

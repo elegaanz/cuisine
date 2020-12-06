@@ -1,0 +1,13 @@
+{% set p = page | default(value=section) %}
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ p.title }} ⋅ Les Panicakes</title>
+    </head>
+    <body>
+        <h1>Bienvenue sur <em>Les Panicakes</em> !</h1>
+        {% block content %}{% endblock content %}
+    </body>
+</html>
