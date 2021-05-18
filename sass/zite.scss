@@ -29,6 +29,7 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 2em;
+  background: $pink;
 }
 
 .home {
@@ -78,5 +79,32 @@ nav {
     justify-content: space-around;
     a {
         text-align: center;
+    }
+}
+
+header.recipe {
+    background-repeat: no-repeat;
+    background-position-x: 10vw;
+    background-color: $pink;
+
+    h1 {
+        margin: 4em;
+        text-shadow: 0px 0px 5px $pink;
+    }
+}
+
+main.recipe {
+    width: clamp(50vw, 70ch, 90vw);
+    margin: auto;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 2em 0;
+
+    ul {
+        padding-left: 2em;
+    }
+
+    h1, h2, h3, ul, p {
+        margin: 0.5em 0;
     }
 }

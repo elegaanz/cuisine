@@ -5,7 +5,7 @@ date = 2021-05-18
 
 ## Ingrédients
 
-- des tomates (je conseille les coeurs de boeuf)
+- des tomates (je conseille les cœurs de bœuf)
 - de l'huile d'olive
 - 1 à 2 gousses d'ail
 - un oignon
