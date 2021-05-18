@@ -10,7 +10,7 @@
     {% for article in paginator.pages %}
         <div>
             <img src="/assiette.png">
-            <h2>{{ article.title }}</h2>
+            <h2><a href="{{ article.permalink }}">{{ article.title }}</a></h2>
         </div>
     {% endfor %}
     </main>

@@ -4,11 +4,7 @@ $yellow: #F6BD60;
 $black: #28262C;
 $green: #84A59D;
 
-@font-face {
-  font-family: "Anonymous";
-  src: url("/Anonymous.ttf") format("truetype");
-  font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=PT+Sans+Narrow&display=swap');
 
 * {
     padding: 0;
@@ -16,13 +12,17 @@ $green: #84A59D;
 }
 
 body {
-  font-family: "Anonymous";
+  font-family: "PT Sans Narrow";
   color: $black;
   background: $white;
 }
 
 a, a:visited {
   color: $black;
+}
+
+h1, h2, h3 {
+    font-family: "Alfa Slab One";
 }
 
 header {
@@ -36,11 +36,10 @@ header {
 }
 
 .home.hero {
-    background: radial-gradient(100% 150% ellipse at center -16em, #F5CAC3 100%, transparent);
-    //background: radial-gradient(110% 100% ellipse at top, $pink 100%, transparent);
+    background: radial-gradient(100% 150% ellipse at center -25em, #F5CAC3 100%, transparent);
 
     h1 {
-        margin: 20vh 0;
+        margin: 10em 0;
     }
 }
 
