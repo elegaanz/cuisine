@@ -9,7 +9,7 @@
     <main class="recipes">
     {% for article in paginator.pages %}
         <div>
-            <img src="/assiette.png">
+            <img src="/{{ article.slug }}.png">
             <h2><a href="{{ article.permalink }}">{{ article.title }}</a></h2>
         </div>
     {% endfor %}
